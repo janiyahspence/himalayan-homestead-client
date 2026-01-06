@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Coffee, Laptop, Star, Heart, ArrowRight } from 'lucide-react';
-import { Section } from '../ui/Section';
 
 const nearbyAttractions = [
   {

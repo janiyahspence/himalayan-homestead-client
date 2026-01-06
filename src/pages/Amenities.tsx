@@ -200,7 +200,7 @@ function AllAmenitiesSection() {
   );
 }
 
-function CompactAmenityCard({ categoryKey, category }: { categoryKey: string; category: { title: string; icon: string; description: string; items: string[] } }) {
+function CompactAmenityCard({ category }: { category: { title: string; icon: string; description: string; items: string[] } }) {
   const Icon = iconMap[category.icon] || Star;
 
   return (
@@ -241,7 +241,7 @@ function AdditionalAmenitiesSection() {
       />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {additionalCategories.map(([key, category]) => (
-          <CompactAmenityCard key={key} categoryKey={key} category={category} />
+          <CompactAmenityCard key={key} category={category} />
         ))}
       </div>
     </Section>
