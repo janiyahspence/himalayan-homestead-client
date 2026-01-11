@@ -14,10 +14,12 @@ import {
   UtensilsCrossed,
   ChevronLeft,
   ChevronRight,
+  Calendar,
 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
+import { DatePickerModal } from '../components/ui/DatePickerModal';
 import { PROPERTY, TRUST_HIGHLIGHTS, STAY_OPTIONS, CONTACT } from '../constants';
 import { PRIVATE_ROOM_IMAGES } from '../constants/privateRoomImages';
 import { TWO_BHK_IMAGES } from '../constants/twoBhkImages';
@@ -327,65 +329,74 @@ function ImageCarousel({ images, title }: { images: { src: string; alt: string }
 }
 
 function EnhancedStayOptionCard({ option }: { option: (typeof STAY_OPTIONS)[0] }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const images = OPTION_IMAGES[option.id] || [];
   const highlights = OPTION_HIGHLIGHTS[option.id] || [];
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-stone-100 hover:shadow-lg transition-shadow duration-300">
-      <ImageCarousel images={images} title={option.title} />
-      <div className="p-6">
-        <h3 className="text-xl font-serif font-medium text-stone-800 mb-2">
-          {option.shortTitle}
-        </h3>
-        <p className="text-stone-600 text-sm mb-4">{option.subtitle}</p>
+    <>
+      <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-stone-100 hover:shadow-lg transition-shadow duration-300">
+        <ImageCarousel images={images} title={option.title} />
+        <div className="p-6">
+          <h3 className="text-xl font-serif font-medium text-stone-800 mb-2">
+            {option.shortTitle}
+          </h3>
+          <p className="text-stone-600 text-sm mb-4">{option.subtitle}</p>
 
-        <div className="grid grid-cols-3 gap-2 mb-5">
-          {highlights.map((highlight, idx) => (
-            <div key={idx} className="text-center p-2 bg-cream-50 rounded-lg">
-              <highlight.icon className="w-4 h-4 text-forest-600 mx-auto mb-1" />
-              <div className="text-xs text-stone-500">{highlight.label}</div>
-              <div className="text-sm font-medium text-stone-700">{highlight.value}</div>
-            </div>
-          ))}
-        </div>
+          <div className="grid grid-cols-3 gap-2 mb-5">
+            {highlights.map((highlight, idx) => (
+              <div key={idx} className="text-center p-2 bg-cream-50 rounded-lg">
+                <highlight.icon className="w-4 h-4 text-forest-600 mx-auto mb-1" />
+                <div className="text-xs text-stone-500">{highlight.label}</div>
+                <div className="text-sm font-medium text-stone-700">{highlight.value}</div>
+              </div>
+            ))}
+          </div>
 
-        <ul className="space-y-2 mb-5">
-          {option.features.slice(0, 3).map((feature) => (
-            <li key={feature} className="flex items-center gap-2 text-sm text-stone-600">
-              <span className="w-1.5 h-1.5 rounded-full bg-forest-500 flex-shrink-0" />
-              {feature}
-            </li>
-          ))}
-        </ul>
+          <ul className="space-y-2 mb-5">
+            {option.features.slice(0, 3).map((feature) => (
+              <li key={feature} className="flex items-center gap-2 text-sm text-stone-600">
+                <span className="w-1.5 h-1.5 rounded-full bg-forest-500 flex-shrink-0" />
+                {feature}
+              </li>
+            ))}
+          </ul>
 
-        <div className="flex flex-wrap gap-1.5 mb-5">
-          {option.idealFor.slice(0, 3).map((tag) => (
-            <span
-              key={tag}
-              className="px-2 py-0.5 bg-forest-50 text-forest-700 text-xs rounded-full"
+          <div className="flex flex-wrap gap-1.5 mb-5">
+            {option.idealFor.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="px-2 py-0.5 bg-forest-50 text-forest-700 text-xs rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex gap-3">
+            <Link
+              to={option.ctaLink}
+              className="flex-1 inline-flex items-center justify-center gap-2 border-2 border-forest-600 text-forest-600 hover:bg-forest-50 py-2.5 px-4 rounded-lg font-medium transition-colors group"
             >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        <div className="flex gap-3">
-          <Link
-            to={option.ctaLink}
-            className="flex-1 inline-flex items-center justify-center gap-2 border-2 border-forest-600 text-forest-600 hover:bg-forest-50 py-2.5 px-4 rounded-lg font-medium transition-colors group"
-          >
-            View Details
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-          <Link
-            to="/booking"
-            className="flex-1 inline-flex items-center justify-center gap-2 bg-forest-600 hover:bg-forest-700 text-white py-2.5 px-4 rounded-lg font-medium transition-colors"
-          >
-            Book Now
-          </Link>
+              View Details
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="flex-1 inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 px-4 rounded-lg font-medium transition-colors"
+            >
+              <Calendar className="w-4 h-4" />
+              Book Now
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+      <DatePickerModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        stayOption={option.shortTitle}
+      />
+    </>
   );
 }
 

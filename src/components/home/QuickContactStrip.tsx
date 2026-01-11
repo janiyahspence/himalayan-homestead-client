@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MessageCircle, Send, ArrowRight, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MessageCircle, ArrowRight } from 'lucide-react';
 import { CONTACT } from '../../constants';
+import { openWhatsApp, getWhatsAppUrl } from '../../utils/whatsapp';
 
 export function QuickContactStrip() {
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
     dates: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -18,13 +17,13 @@ export function QuickContactStrip() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Quick inquiry submitted:', formData);
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
-    setFormData({ name: '', phone: '', dates: '' });
+    openWhatsApp({
+      name: formData.name || undefined,
+      message: formData.dates ? `Preferred dates: ${formData.dates}` : undefined,
+    });
   };
 
-  const whatsappUrl = `https://wa.me/${CONTACT.whatsapp.replace(/\+/g, '')}?text=Hi, I'm interested in staying at Himalayan Valley Homestead.`;
+  const whatsappUrl = getWhatsAppUrl({});
 
   return (
     <section className="bg-gradient-to-r from-forest-700 to-forest-800 py-10 md:py-12">
@@ -39,53 +38,31 @@ export function QuickContactStrip() {
                 Leave your details and we'll get back to you within a few hours.
               </p>
 
-              {isSubmitted ? (
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-medium">Thank you!</h3>
-                    <p className="text-cream-200 text-sm">We'll contact you shortly.</p>
-                  </div>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-3">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your name"
-                    required
-                    className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-cream-300/70 focus:outline-none focus:ring-2 focus:ring-cream-400 focus:border-transparent"
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Phone number"
-                    required
-                    className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-cream-300/70 focus:outline-none focus:ring-2 focus:ring-cream-400 focus:border-transparent"
-                  />
-                  <input
-                    type="text"
-                    name="dates"
-                    value={formData.dates}
-                    onChange={handleChange}
-                    placeholder="Preferred dates"
-                    className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-cream-300/70 focus:outline-none focus:ring-2 focus:ring-cream-400 focus:border-transparent"
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-3 bg-white text-forest-700 font-medium rounded-lg hover:bg-cream-100 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
-                  >
-                    <Send className="w-4 h-4" />
-                    Send
-                  </button>
-                </form>
-              )}
+              <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-3">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your name"
+                  className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-cream-300/70 focus:outline-none focus:ring-2 focus:ring-cream-400 focus:border-transparent"
+                />
+                <input
+                  type="text"
+                  name="dates"
+                  value={formData.dates}
+                  onChange={handleChange}
+                  placeholder="Preferred dates"
+                  className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-cream-300/70 focus:outline-none focus:ring-2 focus:ring-cream-400 focus:border-transparent"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Chat on WhatsApp
+                </button>
+              </form>
             </div>
 
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 lg:justify-end">

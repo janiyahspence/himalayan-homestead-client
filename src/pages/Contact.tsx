@@ -4,6 +4,7 @@ import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
 import { CONTACT, STAY_OPTIONS } from '../constants';
 import { SocialMediaFeedsCompact } from '../components/home/SocialMediaFeeds';
+import { openWhatsApp } from '../utils/whatsapp';
 
 function HeroSection() {
   return (
@@ -46,19 +47,33 @@ function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    const stayOptionTitle = formData.stayOption
+      ? STAY_OPTIONS.find((opt) => opt.id === formData.stayOption)?.shortTitle ||
+        (formData.stayOption === 'not-sure' ? 'Not sure yet' : formData.stayOption)
+      : undefined;
+
+    openWhatsApp({
+      stayOption: stayOptionTitle,
+      checkIn: formData.checkIn,
+      checkOut: formData.checkOut,
+      guests: formData.guests,
+      name: formData.name,
+      email: formData.email || undefined,
+      phone: formData.phone || undefined,
+      message: formData.message || undefined,
+    });
     setIsSubmitted(true);
   };
 
   if (isSubmitted) {
     return (
       <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm text-center">
-        <div className="w-16 h-16 rounded-full bg-forest-100 flex items-center justify-center mx-auto mb-6">
-          <CheckCircle className="w-8 h-8 text-forest-600" />
+        <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+          <MessageCircle className="w-8 h-8 text-green-600" />
         </div>
-        <h3 className="heading-md text-stone-800 mb-4">Thank You!</h3>
+        <h3 className="heading-md text-stone-800 mb-4">Opening WhatsApp...</h3>
         <p className="text-stone-600 mb-8">
-          Your enquiry has been received. We'll get back to you within 24 hours.
+          Your enquiry details have been prepared. Complete your booking conversation on WhatsApp for the fastest response.
         </p>
         <Button onClick={() => setIsSubmitted(false)} variant="secondary">
           Send Another Enquiry
@@ -89,7 +104,7 @@ function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-2">
-            Email Address *
+            Email Address
           </label>
           <input
             type="email"
@@ -97,7 +112,6 @@ function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            required
             className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-forest-500 focus:border-forest-500 transition-colors"
             placeholder="your@email.com"
           />
@@ -107,7 +121,7 @@ function ContactForm() {
       <div className="grid md:grid-cols-2 gap-6 mb-6">
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-stone-700 mb-2">
-            Phone / WhatsApp *
+            Phone / WhatsApp
           </label>
           <input
             type="tel"
@@ -115,7 +129,6 @@ function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            required
             className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-forest-500 focus:border-forest-500 transition-colors"
             placeholder="+91 XXXXX XXXXX"
           />
@@ -208,9 +221,9 @@ function ContactForm() {
         />
       </div>
 
-      <Button type="submit" className="w-full md:w-auto">
-        <Send className="w-4 h-4 mr-2" />
-        Send Enquiry
+      <Button type="submit" className="w-full md:w-auto bg-green-600 hover:bg-green-700">
+        <MessageCircle className="w-4 h-4 mr-2" />
+        Continue on WhatsApp
       </Button>
     </form>
   );

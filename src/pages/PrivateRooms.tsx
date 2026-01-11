@@ -17,10 +17,12 @@ import {
   Star,
   Sun,
   Heart,
-  TreePine
+  TreePine,
+  Calendar
 } from 'lucide-react';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
+import { DatePickerModal } from '../components/ui/DatePickerModal';
 import { PRIVATE_ROOM_IMAGES } from '../constants/privateRoomImages';
 
 function HeroSlider() {
@@ -516,7 +518,7 @@ function AdditionalInfoSection() {
   );
 }
 
-function BookingCTA() {
+function BookingCTA({ onCheckAvailability }: { onCheckAvailability: () => void }) {
   return (
     <Section bg="forest" padding="lg">
       <div className="text-center">
@@ -528,7 +530,8 @@ function BookingCTA() {
           private room today and start your mountain adventure.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/booking" variant="white" size="lg">
+          <Button onClick={onCheckAvailability} variant="white" size="lg">
+            <Calendar className="w-4 h-4 mr-2" />
             Check Availability
           </Button>
           <Button
@@ -549,6 +552,8 @@ function BookingCTA() {
 }
 
 export function PrivateRooms() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <HeroSlider />
@@ -559,7 +564,12 @@ export function PrivateRooms() {
       <FeaturesSection />
       <IdealForSection />
       <AdditionalInfoSection />
-      <BookingCTA />
+      <BookingCTA onCheckAvailability={() => setIsModalOpen(true)} />
+      <DatePickerModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        stayOption="Private Rooms"
+      />
     </>
   );
 }
