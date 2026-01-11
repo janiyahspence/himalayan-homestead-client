@@ -40,7 +40,7 @@ const AMENITY_IMAGES: Record<string, string> = {
   bedroom: '/room-hhs.avif',
   bathroom: '/amenities/bathroom-ntoiletries.jpg',
   kitchen: '/amenities/kitchen.jpg',
-  livingSpaces: '/image-5bhk/imgi_88_a2880a0a-4487-4039-b15b-1e158f096168.jpg',
+  livingSpaces: '/amenities/living-n-common-areas.jpg',
   workspace: '/work-from-mountains.png',
   outdoors: '/outdoor-view.jpeg',
   safety: '/entrance-road.jpg',
