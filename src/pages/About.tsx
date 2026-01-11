@@ -320,7 +320,7 @@ function LocationPreview() {
           Nestled in Palampur
         </h2>
         <p className="body-md text-stone-600 mb-8">
-          Located approximately 9.5 km from Palampur town, the homestead sits in a
+          Located approximately 7 km from Palampur town, the homestead sits in a
           scenic, peaceful residential area surrounded by the majestic Dhauladhar
           mountains and lush Kangra Valley.
         </p>

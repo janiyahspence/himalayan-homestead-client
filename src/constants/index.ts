@@ -28,12 +28,12 @@ export const PROPERTY = {
     parking: 5,
   },
   locationHighlights: [
-    'Approx. 9.5 km from Palampur town',
+    'Approx. 7 km from Palampur town',
     'Scenic mountain surroundings',
     'Peaceful residential area',
   ],
   distanceFrom: {
-    palampur: '9.5 km',
+    palampur: '7 km',
     dharamshala: '35 km',
     kangra: '38 km',
     pathankot: '110 km',

@@ -223,7 +223,7 @@ function ImportantNotices() {
     },
     {
       title: 'Mountain Location',
-      content: 'The property is located 9.5 km from Palampur town in a rural mountain setting. Mobile network coverage is available. Please plan accordingly for supplies and connectivity needs.',
+      content: 'The property is located 7 km from Palampur town in a rural mountain setting. Mobile network coverage is available. Please plan accordingly for supplies and connectivity needs.',
       type: 'warning',
     },
   ];

@@ -4,7 +4,7 @@ import { Section } from '../ui/Section';
 import { CONTACT } from '../../constants';
 
 const distances = [
-  { place: 'Palampur Town', distance: '9.5 km', highlight: true },
+  { place: 'Palampur Town', distance: '7 km', highlight: true },
   { place: 'Dharamshala', distance: '35 km', highlight: false },
   { place: 'Kangra Airport', distance: '38 km', highlight: false },
   { place: 'Delhi', distance: '483 km', highlight: false },
@@ -44,7 +44,7 @@ export function LocationPreview() {
               Nestled in Palampur
             </h2>
             <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-              Located approximately 9.5 km from Palampur town, the homestead sits in a
+              Located approximately 7 km from Palampur town, the homestead sits in a
               scenic, peaceful residential area surrounded by the majestic Dhauladhar
               mountains and lush Kangra Valley.
             </p>

@@ -143,7 +143,7 @@ function HowToReachSection() {
 
 function DistancesSection() {
   const distances = [
-    { place: 'Palampur Town', distance: '9.5 km' },
+    { place: 'Palampur Town', distance: '7 km' },
     { place: 'Dharamshala', distance: '35 km' },
     { place: 'McLeod Ganj', distance: '40 km' },
     { place: 'Kangra Airport', distance: '38 km' },
