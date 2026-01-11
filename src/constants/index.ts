@@ -365,6 +365,12 @@ export const NEARBY_ATTRACTIONS = [
     distance: '35 km',
     image: '/bir-billing.jpg',
   },
+  {
+    name: 'Tulip Garden, Palampur',
+    description: 'Vibrant tulip fields with colorful blooms during spring season.',
+    distance: '6 km',
+    image: '/tulip-garden.jpeg',
+  },
 ];
 
 export const SLOW_EXPERIENCES = [
