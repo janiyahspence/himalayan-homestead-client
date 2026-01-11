@@ -55,8 +55,8 @@ function HeroSection() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/amenties-banner.jpg"
-          alt="Comfortable veranda seating area"
+          src="/2bhk-images/imgi_105_ca220948-3a78-4c5a-96f1-3cbd5ab5e277.jpg"
+          alt="Fully equipped kitchen"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-900/70" />
