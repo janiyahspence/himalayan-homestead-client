@@ -23,6 +23,13 @@ const amenityHighlights = [
   { name: 'Daily Housekeeping', icon: Sparkles, description: 'Clean & tidy' },
 ];
 
+const collageImages = [
+  { src: '/room-hhs.avif', alt: 'Comfortable bedroom' },
+  { src: '/amenities/bathroom-ntoiletries.jpg', alt: 'Modern bathroom' },
+  { src: '/amenities/kitchen.jpg', alt: 'Fully equipped kitchen' },
+  { src: '/amenities/living-n-common-areas.jpg', alt: 'Living and common areas' },
+];
+
 export function AmenitiesShowcase() {
   return (
     <Section bg="sage" padding="lg">
@@ -30,17 +37,28 @@ export function AmenitiesShowcase() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="/outdoor-view.jpeg"
-                  alt="Scenic outdoor seating with mountain views"
-                  className="w-full h-full object-cover"
-                />
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                {collageImages.map((image, index) => (
+                  <div
+                    key={image.src}
+                    className={`aspect-square rounded-xl overflow-hidden shadow-lg ${
+                      index === 0 ? 'rounded-tl-2xl' : ''
+                    } ${index === 1 ? 'rounded-tr-2xl' : ''} ${
+                      index === 2 ? 'rounded-bl-2xl' : ''
+                    } ${index === 3 ? 'rounded-br-2xl' : ''}`}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                ))}
               </div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-forest-600 rounded-2xl shadow-lg hidden md:flex items-center justify-center text-white p-4">
+              <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-28 h-28 md:w-36 md:h-36 bg-forest-600 rounded-2xl shadow-lg flex items-center justify-center text-white p-3">
                 <div className="text-center">
-                  <Sun className="w-8 h-8 mx-auto mb-2" />
-                  <span className="text-sm font-medium">Open-Air Living</span>
+                  <Sun className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-1.5" />
+                  <span className="text-xs md:text-sm font-medium">Fully Equipped</span>
                 </div>
               </div>
             </div>
