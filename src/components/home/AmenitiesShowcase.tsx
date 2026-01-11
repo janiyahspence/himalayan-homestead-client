@@ -3,12 +3,12 @@ import {
   Wifi,
   Zap,
   Mountain,
-  Sun,
   Car,
   Shield,
   Sparkles,
   Armchair,
   ArrowRight,
+  Sun,
 } from 'lucide-react';
 import { Section } from '../ui/Section';
 
@@ -60,11 +60,12 @@ export function AmenitiesShowcase() {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-forest-600 rounded-2xl shadow-lg hidden md:flex items-center justify-center text-white p-4">
-                <div className="text-center">
-                  <Sun className="w-8 h-8 mx-auto mb-2" />
-                  <span className="text-sm font-medium">Home Comforts</span>
-                </div>
+              <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl shadow-lg hidden md:block overflow-hidden">
+                <img
+                  src="/hhs-banner-about.jpg"
+                  alt="Open-air living at the homestead"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
