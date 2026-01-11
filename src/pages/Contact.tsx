@@ -35,6 +35,8 @@ function ContactForm() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const today = new Date().toISOString().split('T')[0];
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
@@ -150,6 +152,7 @@ function ContactForm() {
             name="checkIn"
             value={formData.checkIn}
             onChange={handleChange}
+            min={today}
             className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-forest-500 focus:border-forest-500 transition-colors"
           />
         </div>
@@ -163,6 +166,7 @@ function ContactForm() {
             name="checkOut"
             value={formData.checkOut}
             onChange={handleChange}
+            min={formData.checkIn || today}
             className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-forest-500 focus:border-forest-500 transition-colors"
           />
         </div>
