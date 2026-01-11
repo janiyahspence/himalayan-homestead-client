@@ -60,12 +60,15 @@ export function AmenitiesShowcase() {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl shadow-lg hidden md:block overflow-hidden">
+              <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl shadow-lg hidden md:flex overflow-hidden">
                 <img
                   src="/hhs-banner-about.jpg"
-                  alt="Open-air living at the homestead"
+                  alt="Mountain living at the homestead"
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end justify-center pb-3">
+                  <span className="text-white text-sm font-medium">Mountain Living</span>
+                </div>
               </div>
             </div>
           </div>
