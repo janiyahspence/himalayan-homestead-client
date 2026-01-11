@@ -107,8 +107,8 @@ function SlowExperiencesSection() {
           <div className="space-y-4">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Evening view"
+                src="/quiet-evenings.jpeg"
+                alt="Quiet evenings view"
                 className="w-full h-full object-cover"
               />
             </div>
