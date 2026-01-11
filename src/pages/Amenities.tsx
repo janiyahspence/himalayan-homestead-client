@@ -39,7 +39,7 @@ const iconMap: Record<string, React.ElementType> = {
 const AMENITY_IMAGES: Record<string, string> = {
   bedroom: '/room-hhs.avif',
   bathroom: '/2bhk-images/imgi_109_ce0e06fa-0722-4582-b027-f061d55ed0c8.jpg',
-  kitchen: '/2bhk-images/imgi_104_a4e35648-00d6-43f8-a46e-e45a63a5d4cb.jpg',
+  kitchen: '/amenities/kitchen.jpg',
   livingSpaces: '/image-5bhk/imgi_88_a2880a0a-4487-4039-b15b-1e158f096168.jpg',
   workspace: '/work-from-mountains.png',
   outdoors: '/outdoor-view.jpeg',
