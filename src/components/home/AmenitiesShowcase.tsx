@@ -30,17 +30,40 @@ export function AmenitiesShowcase() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="/outdoor-view.jpeg"
-                  alt="Scenic outdoor seating with mountain views"
-                  className="w-full h-full object-cover"
-                />
+              <div className="grid grid-cols-2 gap-3 aspect-[4/3]">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="/room-hhs.avif"
+                    alt="Comfortable bedroom"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="/amenities/bathroom-ntoiletries.jpg"
+                    alt="Modern bathroom with toiletries"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="/amenities/kitchen.jpg"
+                    alt="Fully equipped kitchen"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="/amenities/living-n-common-areas.jpg"
+                    alt="Cozy living and common areas"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-forest-600 rounded-2xl shadow-lg hidden md:flex items-center justify-center text-white p-4">
                 <div className="text-center">
                   <Sun className="w-8 h-8 mx-auto mb-2" />
-                  <span className="text-sm font-medium">Open-Air Living</span>
+                  <span className="text-sm font-medium">Home Comforts</span>
                 </div>
               </div>
             </div>
