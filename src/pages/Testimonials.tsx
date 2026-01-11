@@ -118,51 +118,27 @@ This was more than just a stay—it was a beautiful experience we will cherish. 
 const GUEST_EXPERIENCES = [
   {
     id: 1,
-    image: '/hhs-hero1.jpg',
+    image: '/guest-moments/whatsapp_image_2026-01-11_at_12.11.37.jpeg',
     caption: 'Family gathering at the homestead',
-    guest: 'The Sharma Family',
+    guest: 'Happy Guests',
   },
   {
     id: 2,
-    image: '/hhs-hero2.jpg',
-    caption: 'Morning views from the balcony',
-    guest: 'Priya & Rahul',
+    image: '/guest-moments/whatsapp_image_2026-01-11_at_12.11.14.jpeg',
+    caption: 'Memorable moments together',
+    guest: 'Family Visit',
   },
   {
     id: 3,
-    image: '/entrance-road.jpg',
-    caption: 'Scenic arrival at the property',
-    guest: 'Weekend Travelers',
+    image: '/guest-moments/whatsapp_image_2026-01-11_at_12.10.25.jpeg',
+    caption: 'Creating memories at the homestead',
+    guest: 'Guest Group',
   },
   {
     id: 4,
-    image: '/morningtea.jpg',
-    caption: 'Morning tea with mountain views',
-    guest: 'Solo Traveler',
-  },
-  {
-    id: 5,
-    image: '/outdoor-view.jpeg',
-    caption: 'Relaxing in nature',
-    guest: 'The Jain Family',
-  },
-  {
-    id: 6,
-    image: '/hhs-hero-5.jpg',
-    caption: 'Sunset at the homestead',
-    guest: 'Couple Retreat',
-  },
-  {
-    id: 7,
-    image: '/hhs-hero-6.jpg',
-    caption: 'Evening ambiance',
-    guest: 'Family Celebration',
-  },
-  {
-    id: 8,
-    image: '/life-at-homestead.jpg',
-    caption: 'Life at the homestead',
-    guest: 'Long-stay Guests',
+    image: '/guest-moments/whatsapp_image_2026-01-11_at_12.10.12.jpeg',
+    caption: 'Cherished moments with loved ones',
+    guest: 'Family Reunion',
   },
 ];
 
