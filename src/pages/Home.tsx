@@ -273,7 +273,7 @@ const OPTION_HIGHLIGHTS: Record<string, { icon: React.ElementType; label: string
   ],
   'entire-homestead': [
     { icon: Bed, label: 'Bedrooms', value: '5' },
-    { icon: Bath, label: 'Bathrooms', value: '4' },
+    { icon: Bath, label: 'Bathrooms', value: '5' },
     { icon: Car, label: 'Parking', value: '5 Cars' },
   ],
 };

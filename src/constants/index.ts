@@ -23,7 +23,7 @@ export const PROPERTY = {
   description: 'Surrounded by mountains, balconies, and open skies.',
   stats: {
     bedrooms: 5,
-    bathrooms: 4,
+    bathrooms: 5,
     kitchens: 3,
     parking: 5,
   },
@@ -95,7 +95,7 @@ export const STAY_OPTIONS = [
     subtitle: 'Ideal for families or groups wanting privacy, space, and exclusivity.',
     description: 'For larger families, reunions, or group retreats, the entire homestead can be booked for exclusive use—offering maximum privacy and shared experiences.',
     features: [
-      '5 bedrooms & 4 bathrooms',
+      '5 bedrooms & 5 bathrooms',
       'Spacious living and dining areas',
       '3 fully equipped kitchens',
       'Rooftop terrace & verandas',

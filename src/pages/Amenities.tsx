@@ -270,7 +270,7 @@ function PropertyOverview() {
               <div className="text-sm text-stone-600">Bedrooms</div>
             </div>
             <div className="bg-white/60 p-4 rounded-xl">
-              <div className="text-3xl font-serif font-medium text-forest-700 mb-1">4</div>
+              <div className="text-3xl font-serif font-medium text-forest-700 mb-1">5</div>
               <div className="text-sm text-stone-600">Bathrooms</div>
             </div>
             <div className="bg-white/60 p-4 rounded-xl">

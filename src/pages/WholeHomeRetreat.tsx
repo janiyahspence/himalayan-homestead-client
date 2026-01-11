@@ -91,7 +91,7 @@ function HeroSlider() {
             </div>
             <div className="flex items-center gap-2">
               <Bath className="w-5 h-5" />
-              <span>4+1 Bathrooms</span>
+              <span>5 Bathrooms</span>
             </div>
             <div className="flex items-center gap-2">
               <UtensilsCrossed className="w-5 h-5" />
@@ -124,7 +124,7 @@ function HeroSlider() {
 function PropertyHighlights() {
   const highlights = [
     { icon: Bed, label: '5 Bedrooms', description: 'Well-appointed rooms with quality bedding' },
-    { icon: Bath, label: '4+1 Bathrooms', description: 'Modern bathrooms + powder room' },
+    { icon: Bath, label: '5 Bathrooms', description: 'Modern bathrooms + powder room' },
     { icon: UtensilsCrossed, label: '3 Kitchens', description: 'Fully equipped with cookware' },
     { icon: Car, label: 'Free Parking', description: '5 private on-site car parks' },
     { icon: Wifi, label: 'Fast Wi-Fi', description: 'Work-from-mountains ready' },
@@ -169,7 +169,7 @@ function AboutSection() {
             <p>
               Surrounded by lush greenery and framed by majestic views of the Dhauladhar mountains,
               this gated property offers everything you need for a relaxed and memorable stay. With
-              five well-appointed bedrooms and four modern bathrooms (plus a convenient powder room),
+              five well-appointed bedrooms and five modern bathrooms,
               the house comfortably accommodates up to 10 guests.
             </p>
             <p>
