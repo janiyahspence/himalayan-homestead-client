@@ -12,6 +12,7 @@ const categories = [
   'Whole Home',
   'Common Areas',
   'Rooftop & Views',
+  'Guest Moments',
   'Surroundings',
 ];
 

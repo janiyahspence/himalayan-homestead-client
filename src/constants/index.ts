@@ -481,6 +481,14 @@ export const GALLERY_IMAGES = [
   { src: '/image-5bhk/imgi_130_6eaed2f9-f63f-46fb-bb5a-cabd361e1ebd.jpg', category: 'Whole Home', alt: 'Whole Home lounge' },
   { src: '/image-5bhk/imgi_131_4efa5879-8520-4d0a-8bd8-9a0bcc95a7a6.jpg', category: 'Whole Home', alt: 'Whole Home evening view' },
   { src: '/image-5bhk/imgi_132_975cae83-ee4f-4b4c-985e-2e7999de6ff7.jpg', category: 'Whole Home', alt: 'Whole Home panorama' },
+  { src: '/guest-moments/whatsapp_image_2026-01-11_at_12.11.37.jpeg', category: 'Guest Moments', alt: 'Family gathering at the homestead' },
+  { src: '/guest-moments/whatsapp_image_2026-01-11_at_12.11.14.jpeg', category: 'Guest Moments', alt: 'Memorable moments together' },
+  { src: '/guest-moments/whatsapp_image_2026-01-11_at_12.10.25.jpeg', category: 'Guest Moments', alt: 'Creating memories at the homestead' },
+  { src: '/guest-moments/whatsapp_image_2026-01-11_at_12.10.12.jpeg', category: 'Guest Moments', alt: 'Cherished moments with loved ones' },
+  { src: '/amenities/kitchen.jpg', category: 'Common Areas', alt: 'Fully equipped kitchen' },
+  { src: '/amenities/bathroom-ntoiletries.jpg', category: 'Rooms', alt: 'Bathroom with toiletries' },
+  { src: '/amenities/living-n-common-areas.jpg', category: 'Common Areas', alt: 'Living and common areas' },
+  { src: '/quiet-evenings.jpeg', category: 'Rooftop & Views', alt: 'Quiet evenings with mountain views' },
 ];
 
 export const POLICIES = [
