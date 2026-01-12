@@ -306,8 +306,8 @@ function PropertyOverview() {
             </div>
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
               <img
-                src="/image-5bhk/imgi_111_af671f23-78a6-4cdd-9e06-8326f653715f.jpg"
-                alt="Terrace view"
+                src="/hhs-banner-about.jpg"
+                alt="Homestead scenic view"
                 className="w-full h-full object-cover"
               />
             </div>
