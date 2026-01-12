@@ -99,7 +99,7 @@ Recommend this stay to individuals and families.`,
 const GOOGLE_REVIEWS = [
   {
     name: 'Saurabh Jain',
-    date: '4 days ago',
+    date: 'a week ago',
     rating: 5,
     tripType: 'Holiday | Family',
     scores: { rooms: 5.0, service: 5.0, location: 5.0 },
@@ -381,12 +381,12 @@ function GoogleReviews() {
 
         <div className="text-center mt-8">
           <a
-            href="https://www.google.com/search?q=Himalayan+Valley+Homestead+Palampur+reviews"
+            href="https://www.google.com/travel/hotels/entity/CgsIq5Px-J6FjtHzARAB/reviews?q=himalayan%20valley%20homestead%20palampur&g2lb=4965990%2C72317059%2C72414906%2C72471280%2C72485658%2C72560029%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C72958624%2C73059275%2C73064764%2C73107089%2C73192290&hl=en-IN&gl=in&ssta=1&ts=CAEaSQorEicyJTB4MzkwNGIxMDAwNjVlNGUyNzoweGYzYTIzODI5ZWYxYzQ5YWIaABIaEhQKBwjqDxABGBESBwjqDxABGBIYATICEAAqCQoFOgNJTlIaAA&qs=CAE4AkIJCatJHO8pOKLzQgkJq0kc7yk4ovM&ictx=111&utm_campaign=sharing&utm_medium=link&utm_source=htls"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-stone-700 px-6 py-3 rounded-full font-medium hover:bg-stone-50 transition-all shadow-md hover:shadow-lg border border-stone-200"
           >
-            View More on Google
+            View More Google Reviews
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
