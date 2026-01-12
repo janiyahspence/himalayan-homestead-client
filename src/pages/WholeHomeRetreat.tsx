@@ -570,7 +570,7 @@ function AdditionalInfoSection() {
               <h3 className="font-serif font-semibold text-stone-800">Bonfire</h3>
             </div>
             <p className="text-stone-600 text-sm">
-              Bonfire available on request for memorable evenings under the Himalayan sky. Additional charges apply (Rs. 500).
+              Bonfire available on request for memorable evenings under the Himalayan sky. Additional charges apply (Rs. 200).
             </p>
           </div>
         </div>

@@ -18,7 +18,8 @@ import {
   Car,
   Sun,
   TreePine,
-  Home
+  Home,
+  Flame
 } from 'lucide-react';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
@@ -527,6 +528,17 @@ function AdditionalInfoSection() {
             <h3 className="font-serif font-semibold text-lg text-stone-800 mb-1">Electric Heater Available</h3>
             <p className="text-stone-600 text-sm">
               Stay warm during winter months. Electric heater available on demand at Rs. 200 per day.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
+          <div className="w-14 h-14 bg-forest-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <Flame className="w-7 h-7 text-forest-600" />
+          </div>
+          <div>
+            <h3 className="font-serif font-semibold text-lg text-stone-800 mb-1">Bonfire Available</h3>
+            <p className="text-stone-600 text-sm">
+              Enjoy memorable evenings under the Himalayan sky. Bonfire available on demand at Rs. 200.
             </p>
           </div>
         </div>
