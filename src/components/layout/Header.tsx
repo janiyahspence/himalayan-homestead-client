@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mountain, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import { NAV_LINKS, CONTACT, STAY_OPTIONS } from '../../constants';
 import { Button } from '../ui/Button';
 
@@ -46,19 +46,19 @@ export function Header() {
     ? 'text-stone-800'
     : 'text-white';
 
-  const logoColor = isScrolled || !isHomePage || isMobileMenuOpen
-    ? 'text-forest-700'
-    : 'text-white';
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-2">
-            <Mountain className={`w-8 h-8 ${logoColor} transition-colors duration-300`} />
-            <div className={`transition-colors duration-300 ${logoColor}`}>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src="/logo.jpeg"
+              alt="Himalayan Valley Homestead"
+              className="h-14 w-auto rounded-md shadow-sm"
+            />
+            <div className={`hidden sm:block transition-colors duration-300 ${isScrolled || !isHomePage || isMobileMenuOpen ? 'text-forest-700' : 'text-white'}`}>
               <span className="font-serif font-semibold text-lg leading-tight block">
                 Himalayan Valley
               </span>

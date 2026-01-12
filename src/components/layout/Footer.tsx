@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mountain, Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
 import { CONTACT, NAV_LINKS, PROPERTY } from '../../constants';
 
 export function Footer() {
@@ -11,8 +11,12 @@ export function Footer() {
       <div className="section-container py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <Mountain className="w-8 h-8 text-cream-400" />
+            <Link to="/" className="flex items-center gap-3 mb-6">
+              <img
+                src="/logo.jpeg"
+                alt="Himalayan Valley Homestead"
+                className="h-16 w-auto rounded-md"
+              />
               <div className="text-white">
                 <span className="font-serif font-semibold text-lg leading-tight block">
                   Himalayan Valley
