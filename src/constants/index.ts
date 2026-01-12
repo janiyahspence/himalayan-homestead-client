@@ -303,7 +303,7 @@ export const DETAILED_AMENITIES = {
     icon: 'Flame',
     description: 'Stay comfortable in all seasons with heating options and proper ventilation.',
     items: [
-      'Room heaters (winter)',
+      'Electric heater on demand (Rs. 200/day)',
       'Extra blankets and quilts',
       'Hot water bottles available',
       'Ceiling fans (summer)',
@@ -588,6 +588,7 @@ export const DETAILED_POLICIES = {
       { label: 'Booking Confirmation', value: 'Advance payment required' },
       { label: 'Payment Methods', value: 'UPI, Bank Transfer, or via booking platforms' },
       { label: 'Extra Mattress', value: 'Rs. 500 per mattress per night' },
+      { label: 'Electric Heater', value: 'Rs. 200 per day (on demand)' },
       { label: 'Airport Transfers', value: 'Available at additional cost' },
       { label: 'Long Stay Discount', value: 'Available for stays of 7+ nights' },
     ],

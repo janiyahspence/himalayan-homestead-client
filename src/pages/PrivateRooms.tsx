@@ -501,7 +501,7 @@ function IdealForSection() {
 function AdditionalInfoSection() {
   return (
     <Section bg="stone" padding="md">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto space-y-4">
         <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
           <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
             <Bed className="w-7 h-7 text-amber-600" />
@@ -510,6 +510,17 @@ function AdditionalInfoSection() {
             <h3 className="font-serif font-semibold text-lg text-stone-800 mb-1">Extra Mattresses Available</h3>
             <p className="text-stone-600 text-sm">
               Need additional sleeping arrangements? Extra mattresses are available at Rs. 500 per mattress per night.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
+          <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <Sun className="w-7 h-7 text-amber-600" />
+          </div>
+          <div>
+            <h3 className="font-serif font-semibold text-lg text-stone-800 mb-1">Electric Heater Available</h3>
+            <p className="text-stone-600 text-sm">
+              Stay warm during winter months. Electric heater available on demand at Rs. 200 per day.
             </p>
           </div>
         </div>

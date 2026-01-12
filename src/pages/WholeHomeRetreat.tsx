@@ -598,6 +598,19 @@ function AdditionalInfoSection() {
             </p>
           </div>
         </div>
+        <div className="mt-6">
+          <div className="bg-white rounded-2xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-forest-100 rounded-xl flex items-center justify-center">
+                <Sun className="w-6 h-6 text-forest-600" />
+              </div>
+              <h3 className="font-serif font-semibold text-stone-800">Electric Heater Available</h3>
+            </div>
+            <p className="text-stone-600 text-sm">
+              Stay warm during winter months. Electric heater available on demand at Rs. 200 per day.
+            </p>
+          </div>
+        </div>
       </div>
     </Section>
   );
