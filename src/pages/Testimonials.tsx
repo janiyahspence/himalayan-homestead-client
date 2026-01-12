@@ -99,7 +99,7 @@ Recommend this stay to individuals and families.`,
 const GOOGLE_REVIEWS = [
   {
     name: 'Saurabh Jain',
-    date: 'a week ago',
+    date: 'Jan 2026',
     rating: 5,
     tripType: 'Holiday | Family',
     scores: { rooms: 5.0, service: 5.0, location: 5.0 },
