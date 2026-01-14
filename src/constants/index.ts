@@ -130,7 +130,7 @@ export const AMENITIES = {
   parking: {
     title: 'Parking & Access',
     items: [
-      { name: 'Gated property', icon: 'Shield' },
+      { name: 'Gated property with CCTV', icon: 'Shield' },
       { name: 'On-site parking (5 cars)', icon: 'Car' },
     ],
   },
@@ -253,6 +253,7 @@ export const DETAILED_AMENITIES = {
     description: 'A secure, gated property with safety measures for peace of mind during your stay.',
     items: [
       'Gated property with secure access',
+      '8 CCTV cameras for 24/7 surveillance',
       'On-site caretaker',
       'Fire extinguishers',
       'First aid kit',
@@ -632,6 +633,7 @@ export const DETAILED_POLICIES = {
     icon: 'Shield',
     items: [
       { label: 'Gated Property', value: 'Secure access with on-site caretaker' },
+      { label: 'CCTV Surveillance', value: '8 cameras installed for 24/7 monitoring' },
       { label: 'Fire Safety', value: 'Extinguishers and smoke detectors installed' },
       { label: 'First Aid', value: 'Basic first aid kit available' },
       { label: 'Emergency', value: 'Local hospital within 15 km' },

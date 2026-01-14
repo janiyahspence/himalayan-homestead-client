@@ -100,7 +100,7 @@ function QuickHighlights() {
     { icon: Wifi, label: 'High-Speed Wi-Fi', desc: 'Work-ready connectivity' },
     { icon: Zap, label: 'Power Backup', desc: 'Uninterrupted electricity' },
     { icon: Mountain, label: 'Mountain Views', desc: 'Dhauladhar range' },
-    { icon: Shield, label: 'Secure Property', desc: 'Gated with caretaker' },
+    { icon: Shield, label: 'Secure Property', desc: '8 CCTV cameras & caretaker' },
     { icon: Home, label: 'Fully Equipped', desc: '3 kitchens available' },
     { icon: Sparkles, label: 'Daily Housekeeping', desc: 'Clean & maintained' },
   ];
