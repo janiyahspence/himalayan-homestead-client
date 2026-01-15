@@ -1,6 +1,6 @@
 export const CONTACT = {
   phones: ['+919877865729', '+919872925078'],
-  whatsapp: '+919872925078',
+  whatsapp: '+919877865729',
   email: 'himalayavalleyhomestead@gmail.com',
   address: {
     line1: 'Dharaman Utrala Road, Sornu',
