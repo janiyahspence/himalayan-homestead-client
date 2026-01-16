@@ -13,9 +13,9 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <img
-                src="/logo.jpeg"
+                src="/logo3.svg"
                 alt="Himalayan Valley Homestead"
-                className="h-16 w-auto rounded-md"
+                className="h-16 w-auto"
               />
               <div className="text-white">
                 <span className="font-serif font-semibold text-lg leading-tight block">

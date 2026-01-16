@@ -54,9 +54,9 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/logo.jpeg"
+              src="/logo3.svg"
               alt="Himalayan Valley Homestead"
-              className="h-14 w-auto rounded-md shadow-sm"
+              className="h-14 w-auto"
             />
             <div className={`hidden sm:block transition-colors duration-300 ${isScrolled || !isHomePage || isMobileMenuOpen ? 'text-forest-700' : 'text-white'}`}>
               <span className="font-serif font-semibold text-lg leading-tight block">
