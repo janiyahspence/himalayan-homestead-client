@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
 import { CONTACT, STAY_OPTIONS } from '../constants';
@@ -346,6 +347,12 @@ function MapSection() {
 }
 
 export function Contact() {
+  useSEO({
+    title: 'Contact Us – Himalayan Valley Homestead Palampur',
+    description: 'Get in touch with Himalayan Valley Homestead, Palampur. Call +91 98778 65729, WhatsApp us, or email himalayavalleyhomestead@gmail.com. Located at Dharaman Utrala Road, Sornu, Palampur, HP 176061.',
+    keywords: 'contact Himalayan Valley Homestead, Palampur homestay contact number, phone number Palampur accommodation, WhatsApp Palampur homestay',
+    canonicalPath: '/contact',
+  });
   return (
     <>
       <HeroSection />

@@ -1,4 +1,5 @@
 import { MapPin, Coffee, Laptop, Star, Heart, ArrowRight } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
@@ -217,6 +218,13 @@ function CTASection() {
 }
 
 export function Experiences() {
+  useSEO({
+    title: 'Experiences – Things to Do Near Palampur | Tea Gardens, Temples & Paragliding',
+    description: 'Explore experiences near Himalayan Valley Homestead, Palampur. Visit Palampur tea gardens, Baijnath temple, Chamunda Devi, Bir Billing paragliding, Sobha Singh Art Gallery & more. Perfect base for Himachal exploration.',
+    keywords: 'things to do Palampur, Palampur experiences, Bir Billing paragliding stay, Baijnath temple near accommodation, tea garden Palampur, Chamunda Devi temple homestay, Kangra valley tourism, Dhauladhar trekking base',
+    canonicalPath: '/experiences',
+    ogImage: 'https://himalayanvalleyhomestead.in/palampur-experiences-banner.webp',
+  });
   return (
     <>
       <HeroSection />

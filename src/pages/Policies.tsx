@@ -17,6 +17,7 @@ import {
   ChevronDown,
 } from 'lucide-react';
 import { useState } from 'react';
+import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
@@ -417,6 +418,12 @@ function ContactSection() {
 }
 
 export function Policies() {
+  useSEO({
+    title: 'House Rules & Policies – Himalayan Valley Homestead Palampur',
+    description: 'Read the house rules and policies for Himalayan Valley Homestead, Palampur. Check-in at 11 AM, check-out at 2 PM. Cancellation policy, payment terms, guest guidelines for a comfortable mountain stay.',
+    keywords: 'Palampur homestay policies, check-in check-out Palampur, cancellation policy homestay, house rules mountain stay Himachal',
+    canonicalPath: '/policies',
+  });
   return (
     <>
       <HeroSection />

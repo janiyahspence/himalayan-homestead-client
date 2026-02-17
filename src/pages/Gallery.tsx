@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { GALLERY_IMAGES } from '../constants';
 
@@ -152,6 +153,13 @@ function GalleryGrid() {
 }
 
 export function Gallery() {
+  useSEO({
+    title: 'Photo Gallery – Himalayan Valley Homestead Palampur',
+    description: 'Browse photos of Himalayan Valley Homestead, Palampur. See rooms, 2BHK, whole home, rooftop terrace, mountain views, and surroundings. A serene mountain homestay in Himachal Pradesh.',
+    keywords: 'Palampur homestay photos, Himalayan Valley Homestead gallery, mountain view accommodation pictures, rooftop terrace photos Palampur',
+    canonicalPath: '/gallery',
+    ogImage: 'https://himalayanvalleyhomestead.in/hhs-hero-6.jpg',
+  });
   return (
     <>
       <HeroSection />
