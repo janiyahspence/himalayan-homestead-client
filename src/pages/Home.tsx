@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useSEO } from '../hooks/useSEO';
 import { Link } from 'react-router-dom';
 import {
   Mountain,
@@ -448,13 +447,6 @@ function CTASection() {
 }
 
 export function Home() {
-  useSEO({
-    title: 'Himalayan Valley Homestead, Palampur – Mountain Homestay with Rooms, 2BHK & Whole Home',
-    description: 'Book Himalayan Valley Homestead in Palampur, Himachal Pradesh. Serene mountain homestay offering private rooms, 2BHK & whole home rentals. Dhauladhar views, rooftop terrace, free WiFi & parking. 7 km from Palampur town.',
-    keywords: 'Palampur homestay, Palampur accommodation, hotel in Palampur, mountain stay Palampur, Himalayan Valley Homestead, Himachal Pradesh homestay, Dhauladhar homestay, Kangra valley stay, holiday home Palampur',
-    canonicalPath: '/',
-    ogImage: 'https://himalayanvalleyhomestead.in/hhs-hero-6.jpg',
-  });
   return (
     <>
       <HeroSection />

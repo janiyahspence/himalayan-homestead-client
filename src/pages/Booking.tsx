@@ -1,5 +1,4 @@
 import { ExternalLink, MessageCircle, Phone, Mail, Check } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
@@ -229,13 +228,6 @@ function QuickContactSection() {
 }
 
 export function Booking() {
-  useSEO({
-    title: 'Book Your Stay – Himalayan Valley Homestead Palampur, Himachal Pradesh',
-    description: 'Book your mountain getaway at Himalayan Valley Homestead, Palampur. Private rooms, 2BHK or whole home available. Direct booking via WhatsApp or Airbnb. Best rates guaranteed. Call +91 98778 65729.',
-    keywords: 'book homestay Palampur, Palampur accommodation booking, reserve rooms Palampur, Palampur holiday booking, Himalayan Valley Homestead reservation, book mountain stay Himachal',
-    canonicalPath: '/booking',
-    ogImage: 'https://himalayanvalleyhomestead.in/hhs-hero-6.jpg',
-  });
   return (
     <>
       <HeroSection />

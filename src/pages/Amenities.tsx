@@ -1,4 +1,3 @@
-import { useSEO } from '../hooks/useSEO';
 import {
   Wifi,
   Zap,
@@ -384,13 +383,6 @@ function CTASection() {
 }
 
 export function Amenities() {
-  useSEO({
-    title: 'Amenities – WiFi, Kitchen, Rooftop Terrace & More at Palampur Homestay',
-    description: 'Discover all amenities at Himalayan Valley Homestead, Palampur. Free high-speed WiFi, 24/7 hot water, fully equipped kitchen, rooftop terrace with Dhauladhar views, free parking, CCTV security & housekeeping.',
-    keywords: 'Palampur homestay amenities, WiFi mountain stay, kitchen homestay Palampur, rooftop terrace Palampur, mountain view accommodation amenities, hot water Palampur stay, free parking homestay',
-    canonicalPath: '/amenities',
-    ogImage: 'https://himalayanvalleyhomestead.in/amenties-banner.jpg',
-  });
   return (
     <>
       <HeroSection />

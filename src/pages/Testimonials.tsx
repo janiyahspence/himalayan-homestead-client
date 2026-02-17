@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Star, Quote, ExternalLink, MapPin, Calendar, Users, Heart, Camera, X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
 
@@ -598,13 +597,6 @@ function CallToAction() {
 }
 
 export function Testimonials() {
-  useSEO({
-    title: 'Guest Reviews & Testimonials – Himalayan Valley Homestead Palampur',
-    description: 'Read verified guest reviews for Himalayan Valley Homestead, Palampur. Rated 5 stars on Airbnb. Guests love the mountain views, warm hospitality, and peaceful atmosphere. Book your mountain stay today.',
-    keywords: 'Himalayan Valley Homestead reviews, Palampur homestay reviews, 5 star homestay Palampur, guest testimonials Palampur accommodation, Airbnb reviews Palampur',
-    canonicalPath: '/testimonials',
-    ogImage: 'https://himalayanvalleyhomestead.in/hhs-hero1.jpg',
-  });
   return (
     <>
       <HeroSection />

@@ -1,5 +1,4 @@
 import { MapPin, Navigation, Car, Plane, Train, ExternalLink } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
@@ -204,13 +203,6 @@ function CTASection() {
 }
 
 export function Location() {
-  useSEO({
-    title: 'Location & Directions – Himalayan Valley Homestead, Sornu, Palampur',
-    description: 'Find Himalayan Valley Homestead at Dharaman Utrala Road, Sornu, Palampur, Himachal Pradesh. 7 km from Palampur town, 35 km from Dharamshala, 35 km from Bir Billing. Directions by road, rail & air.',
-    keywords: 'Himalayan Valley Homestead location, how to reach Palampur homestay, Sornu Palampur accommodation, distance from Dharamshala, Palampur homestay map, directions Palampur stay',
-    canonicalPath: '/location',
-    ogImage: 'https://himalayanvalleyhomestead.in/palampur-location.jpg',
-  });
   return (
     <>
       <HeroSection />

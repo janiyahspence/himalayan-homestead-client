@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Check, Users, Clock, Home, X, ChevronLeft, ChevronRight, Bed, Bath, UtensilsCrossed, Mountain, Wifi, Car } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
@@ -396,12 +395,6 @@ function CTASection() {
 }
 
 export function StayOptions() {
-  useSEO({
-    title: 'Stay Options – Private Rooms, 2BHK Homestay & Whole Home Rental in Palampur',
-    description: 'Choose your perfect stay at Himalayan Valley Homestead, Palampur. Private rooms for couples, 2BHK for families, or the entire 5-bedroom home for groups. All with mountain views & modern amenities.',
-    keywords: 'Palampur accommodation types, private room Palampur, 2BHK homestay Palampur, whole home rental Palampur, group stay Palampur, family accommodation Himachal Pradesh',
-    canonicalPath: '/stay-options',
-  });
   return (
     <>
       <HeroSection />

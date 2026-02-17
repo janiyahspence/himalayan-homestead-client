@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useSEO } from '../hooks/useSEO';
 import {
   Users,
   Bed,
@@ -651,13 +650,6 @@ function BookingCTA({ onCheckAvailability }: { onCheckAvailability: () => void }
 }
 
 export function WholeHomeRetreat() {
-  useSEO({
-    title: 'Whole Home Retreat – Book Entire 5-Bedroom Himalayan Homestead in Palampur',
-    description: 'Exclusive whole home booking at Himalayan Valley Homestead, Palampur. 5 bedrooms, 5 bathrooms, 3 kitchens, rooftop terrace & verandas. Perfect for large families, group retreats & corporate offsites in Himachal Pradesh.',
-    keywords: 'whole home rental Palampur, entire house Palampur, 5 bedroom homestead Himachal, group retreat Palampur, corporate offsite Himachal, family reunion Palampur, exclusive homestay booking',
-    canonicalPath: '/stay-options/whole-home-retreat',
-    ogImage: 'https://himalayanvalleyhomestead.in/image-5bhk/imgi_3_b36e7639-1e38-437c-98be-163dc9367a7f.jpg',
-  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useSEO } from '../hooks/useSEO';
 import {
   Users,
   Bed,
@@ -582,13 +581,6 @@ function BookingCTA({ onCheckAvailability }: { onCheckAvailability: () => void }
 }
 
 export function TwoBhkHomestay() {
-  useSEO({
-    title: '2BHK Himalayan Homestay – Private 2-Bedroom Stay in Palampur',
-    description: 'Book the 2BHK Himalayan Homestay at Himalayan Valley Homestead, Palampur. Private 2-bedroom unit with attached bathrooms, full kitchen, veranda & mountain views. Ideal for families, small groups & remote work stays.',
-    keywords: '2BHK homestay Palampur, 2 bedroom rental Palampur, family stay Palampur Himachal, self-catering accommodation Palampur, work from mountains Himachal, long stay Palampur',
-    canonicalPath: '/stay-options/2bhk-homestay',
-    ogImage: 'https://himalayanvalleyhomestead.in/2bhk-images/imgi_21_0b4742dd-5367-4583-acf2-8f46a517dbc3.jpg',
-  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

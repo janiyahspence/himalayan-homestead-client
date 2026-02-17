@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useSEO } from '../hooks/useSEO';
 import {
   Users,
   Bed,
@@ -576,13 +575,6 @@ function BookingCTA({ onCheckAvailability }: { onCheckAvailability: () => void }
 }
 
 export function PrivateRooms() {
-  useSEO({
-    title: 'Private Rooms – Affordable Mountain Stay in Palampur, Himachal Pradesh',
-    description: 'Book private rooms at Himalayan Valley Homestead, Palampur. Comfortable queen/double beds, shared bathrooms, mountain balcony access, free WiFi & common kitchen. Budget-friendly accommodation for solo travelers & couples.',
-    keywords: 'private room Palampur, budget accommodation Palampur, solo travel Palampur, couple stay Palampur Himachal, affordable homestay Himachal Pradesh, mountain room Palampur',
-    canonicalPath: '/stay-options/private-rooms',
-    ogImage: 'https://himalayanvalleyhomestead.in/private-rooms/imgi_4_9066113e-9ca5-425a-a9fc-91fb5fda5db3.jpg',
-  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

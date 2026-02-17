@@ -1,5 +1,4 @@
 import { Check, Heart, Compass, UtensilsCrossed, Anchor, MapPin, Star } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
 import { PROPERTY } from '../constants';
@@ -348,13 +347,6 @@ function LocationPreview() {
 }
 
 export function About() {
-  useSEO({
-    title: 'About Us – Family-Run Himalayan Homestay in Palampur',
-    description: 'Meet your hosts at Himalayan Valley Homestead, Palampur. A family-run mountain homestay offering a warm, personal experience with Dhauladhar views, home-cooked meals, and genuine Himachali hospitality.',
-    keywords: 'about Himalayan Valley Homestead, Palampur homestay hosts, family homestay Palampur, Lalita Raj homestead, Himachali hospitality',
-    canonicalPath: '/about',
-    ogImage: 'https://himalayanvalleyhomestead.in/hhs-banner-about.jpg',
-  });
   return (
     <>
       <HeroSection />
